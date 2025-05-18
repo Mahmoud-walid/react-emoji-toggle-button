@@ -1,4 +1,12 @@
 {
+  "homepage": "https://github.com/Mahmoud-walid/react-emoji-picker-button#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mahmoud-walid/react-emoji-picker-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mahmoud-walid/react-emoji-picker-button/issues"
+  },
   "name": "react-emoji-picker-button",
   "private": false,
   "publishConfig": {
@@ -27,6 +35,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "demo": "vite --config example/vite.config.demo.ts",
+    "demo:build": "vite build --config example/vite.config.demo.ts",
     "prepublishOnly": "npm run build && npm pack --dry-run",
     "lint": "eslint .",
     "preview": "vite preview"

@@ -4,6 +4,7 @@ import dtsPlugin from "vite-plugin-dts";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/react-emoji-picker-button/",
   plugins: [react(), dtsPlugin({ tsconfigPath: "./tsconfig.build.json" })],
   build: {
     outDir: "build",
