@@ -1,54 +1,124 @@
-# React + TypeScript + Vite
+Here's a professional and comprehensive documentation update for your `README.md`, including a detailed table of all `EmojiPickerButton` props, their types, descriptions, and default values.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## EmojiPickerButton Props
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The `EmojiPickerButton` component is highly customizable. Below is a table describing all available props, their types, default values, and descriptions:
 
-## Expanding the ESLint configuration
+| Prop Name              | Type                                                           | Default Value          | Description                                                                  |
+| ---------------------- | -------------------------------------------------------------- | ---------------------- | ---------------------------------------------------------------------------- |
+| `textInputRef`         | `RefObject<HTMLInputElement \| HTMLTextAreaElement \| null>`   | **Required**           | Reference to the input or textarea element where the emoji will be inserted. |
+| `classNames`           | `EmojiPickerClassNames`                                        | `{}`                   | Custom CSS class names for different parts of the picker.                    |
+| `config`               | `EmojiPickerConfig`                                            | `{}`                   | Advanced configuration options for the picker (see below for details).       |
+| `initialCategory`      | `string`                                                       | `undefined`            | The category to be active initially when the picker opens.                   |
+| `onEmojiSelect`        | `(emoji: string) => void`                                      | `undefined`            | Callback function triggered when an emoji is selected.                       |
+| `styles`               | `EmojiPickerStyles`                                            | `{}`                   | Custom inline styles for different parts of the picker.                      |
+| `position`             | `"top-left" \| "top-right" \| "bottom-left" \| "bottom-right"` | `"top-left"`           | Position of the emoji picker relative to the button.                         |
+| `theme`                | `"light" \| "dark"`                                            | `"light"`              | Theme of the picker (light or dark).                                         |
+| `themeConfig`          | `ThemeConfig`                                                  | `defaultThemeConfig`   | Custom theme configuration for light, dark, or custom themes.                |
+| `lang`                 | `"en" \| "ar"`                                                 | `"en"`                 | Language for the picker UI (English or Arabic).                              |
+| `enableRecentEmojis`   | `boolean`                                                      | `true`                 | Enable or disable tracking and showing recent emojis.                        |
+| `sizes`                | `EmojiPickerSizes`                                             | `{}`                   | Custom size configuration for the picker (overrides default sizes).          |
+| `size`                 | `"sm" \| "md" \| "lg"`                                         | `"md"`                 | Predefined size for the picker (small, medium, large).                       |
+| `enableTabsTitleEmoji` | `boolean`                                                      | `true`                 | Show emoji icons in the category tabs.                                       |
+| `preventBadEmojis`     | `boolean`                                                      | `true`                 | Filter out a predefined list of unwanted emojis.                             |
+| `badEmojiList`         | `string[]`                                                     | `defaultBadEmojisList` | Custom list of emojis to filter out (overrides the default list).            |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Types Reference
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **EmojiPickerClassNames**: Custom class names for styling (see below for structure).
+- **EmojiPickerConfig**: Advanced configuration options for the picker (see below for structure).
+- **EmojiPickerStyles**: Custom inline styles for different picker parts (see below for structure).
+- **ThemeConfig**: Theme color configuration for light, dark, and custom themes.
+- **EmojiPickerSizes**: Size configuration for the picker.
+
+#### EmojiPickerClassNames
+
+```typescript
+interface EmojiPickerClassNames {
+  container?: string;
+  tabs?: string;
+  tabButton?: string;
+  activeTabButton?: string;
+  searchInput?: string;
+  emojiList?: string;
+  emojiButton?: string;
+  noResultsMessage?: string;
+  emojiRow?: string;
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+#### EmojiPickerStyles
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```typescript
+interface EmojiPickerStyles {
+  container?: CSSProperties;
+  tabs?: CSSProperties;
+  tabButton?: CSSProperties;
+  activeTabButton?: CSSProperties;
+  searchInput?: CSSProperties;
+  emojiList?: CSSProperties;
+  emojiButton?: CSSProperties;
+  noResultsMessage?: CSSProperties;
+}
 ```
+
+#### EmojiPickerConfig
+
+```typescript
+interface EmojiPickerConfig {
+  emojisPerRow?: number;
+  emojiItemSize?: number;
+  pickerWidth?: number | string;
+  pickerHeight?: number | string;
+  listHeight?: number;
+  fontFamily?: string;
+  searchPlaceholder?: string;
+  noResultsMessage?: string;
+  applyEmojiFont?: boolean;
+  themeConfig?: ThemeConfig;
+  enableRecentEmojis?: boolean;
+  recentEmojisLabel?: string;
+}
+```
+
+#### EmojiPickerSizes
+
+```typescript
+type EmojiPickerSizes = {
+  pickerWidth?: number;
+  pickerHeight?: number;
+  emojiItemSize?: number;
+  listHeight?: number;
+  emojisPerRow?: number;
+};
+```
+
+#### ThemeConfig
+
+```typescript
+interface ThemeColors {
+  backgroundColor: string;
+  textColor: string;
+  borderColor: string;
+  tabActiveBackgroundColor: string;
+  tabActiveBorderColor: string;
+  tabHoverBackgroundColor: string;
+  scrollbarThumbColor: string;
+  scrollbarThumbHoverColor: string;
+  inputBorderColor: string;
+  boxShadowColor: string;
+  noResultsTextColor: string;
+}
+
+interface ThemeConfig {
+  light: ThemeColors;
+  dark: ThemeColors;
+  custom?: Record<string, ThemeColors>;
+}
+```
+
+## License
+
+MIT
