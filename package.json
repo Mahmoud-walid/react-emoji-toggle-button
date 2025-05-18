@@ -37,6 +37,7 @@
     "build": "tsc -b && vite build",
     "demo": "vite --config example/vite.config.demo.ts",
     "demo:build": "vite build --config example/vite.config.demo.ts",
+    "deploy": "npm run demo:build && git subtree push --prefix docs origin gh-pages",
     "prepublishOnly": "npm run build && npm pack --dry-run",
     "lint": "eslint .",
     "preview": "vite preview"
