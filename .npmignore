@@ -1,0 +1,37 @@
+# Folders to ignore
+src/
+node_modules/
+.vscode/
+test/
+tests/
+__tests__/
+coverage/
+example/
+examples/
+public/
+build/       # It will only be ignored if you don't add "files": ["build"] in package.json
+
+# Configs and meta files
+tsconfig.*
+*.log
+*.tsbuildinfo
+.eslintrc.*
+eslint.*
+.prettier*
+.vitepress
+.storybook
+
+# Misc
+.env*
+*.md~
+*.bak
+.DS_Store
+Thumbs.db
+
+vite.config.ts
+*.config.js
+*.html
+tsconfig*.json
+.eslintrc.js
+*.test.*
+*.spec.*
