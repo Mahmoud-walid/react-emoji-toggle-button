@@ -2,6 +2,12 @@ Here's a professional and comprehensive documentation update for your `README.md
 
 ---
 
+## Live Demo
+
+You can try the Emoji Picker Button live here: [Demo](https://mahmoud-walid.github.io/react-emoji-picker-button/)
+
+---
+
 ## EmojiPickerButton Props
 
 The `EmojiPickerButton` component is highly customizable. Below is a table describing all available props, their types, default values, and descriptions:
