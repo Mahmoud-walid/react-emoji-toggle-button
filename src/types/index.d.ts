@@ -11,7 +11,7 @@ interface EmojiSubCategory {
 interface EmojiCategory {
   [categoryName: string]: EmojiSubCategory;
 }
-interface EmojiData {
+export interface EmojiData {
   emojis: EmojiCategory;
 }
 
@@ -42,7 +42,7 @@ interface ThemeConfig {
 // EmojiInputPicker.tsx
 
 // Styles interfaces
-interface EmojiPickerStyles {
+export interface EmojiPickerStyles {
   container?: CSSProperties;
   tabs?: CSSProperties;
   tabButton?: CSSProperties;
@@ -53,7 +53,7 @@ interface EmojiPickerStyles {
   noResultsMessage?: CSSProperties;
 }
 
-interface EmojiPickerClassNames {
+export interface EmojiPickerClassNames {
   container?: string;
   tabs?: string;
   tabButton?: string;
@@ -65,7 +65,7 @@ interface EmojiPickerClassNames {
   emojiRow?: string;
 }
 
-interface EmojiPickerConfig {
+export interface EmojiPickerConfig {
   emojisPerRow?: number;
   emojiItemSize?: number;
   pickerWidth?: number | string;
@@ -93,3 +93,7 @@ type EmojiPickerSizes = {
   listHeight?: number;
   emojisPerRow?: number;
 };
+
+export type { ThemeConfig };
+export type { ListItem };
+export type { EmojiPickerSizes };
