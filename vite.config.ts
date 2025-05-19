@@ -10,7 +10,7 @@ export default defineConfig({
     outDir: "build",
     lib: {
       entry: "./src/index.tsx",
-      name: "react-emoji-input-picker",
+      name: "react-emoji-picker-button",
       fileName: "index",
       formats: ["es", "cjs"],
     },
