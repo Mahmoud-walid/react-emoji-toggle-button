@@ -40,7 +40,7 @@
     "deploy": "npm run demo:build && git subtree push --prefix docs origin gh-pages",
     "prepublishOnly": "npm run build && npm pack --dry-run",
     "release": "npm run build && npm version patch && npm publish --access public",
-    "publishPublic": "npm publish --access public",
+    "publishPublic": "npm run build && npm publish --access public",
     "lint": "eslint .",
     "preview": "vite preview"
   },
