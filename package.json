@@ -16,7 +16,7 @@
   "type": "module",
   "main": "build/index.cjs",
   "module": "build/index.mjs",
-  "types": "build/types/index.d.ts",
+  "types": "build/index.d.ts",
   "files": [
     "build"
   ],
@@ -24,7 +24,7 @@
     ".": {
       "import": "./build/index.mjs",
       "require": "./build/index.cjs",
-      "types": "./build/types/index.d.ts"
+      "types": "./build/index.d.ts"
     }
   },
   "peerDependencies": {
