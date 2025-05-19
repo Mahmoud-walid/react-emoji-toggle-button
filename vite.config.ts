@@ -21,7 +21,9 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
         },
+        assetFileNames: "react-emoji-picker-button.css",
       },
     },
+    cssCodeSplit: false,
   },
 });
