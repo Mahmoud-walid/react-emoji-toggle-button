@@ -1,7 +1,6 @@
 import EmojiInputPicker from "./EmojiInputPicker";
 import { type RefObject } from "react";
 // import emojiData from "../data/categories.with.modifiers.json";
-import "./index.css";
 import {
   defaultBadEmojisList,
   defaultThemeConfig,
@@ -22,6 +21,7 @@ import type {
   EmojiPickerStyles,
   ThemeConfig,
 } from "../types";
+import GlobalStyles from "./GlobalStyles";
 
 interface IProps {
   textInputRef: RefObject<HTMLInputElement | HTMLTextAreaElement | null>;
@@ -86,55 +86,61 @@ const EmojiPickerButton = ({
   useInputPlaceholderAndDir({ lang, textInputRef });
 
   return (
-    <div
-      className={`emoji-picker-container emoji-picker-theme-${theme}`}
-      style={{
-        fontFamily: '"Twemoji Country Flags", "Helvetica", "Comic Sans", serif',
-      }}
-      data-theme={theme}
-    >
-      <Button
-        currentEmoji={currentEmoji}
-        setCurrentEmoji={setCurrentEmoji}
-        setShowEmojiPicker={setShowEmojiPicker}
-        showEmojiPicker={showEmojiPicker}
-        theme={theme}
-      />
-      {showEmojiPicker && (
-        <div
-          className={`emoji-picker-wrapper emoji-picker-position-${position} emoji-picker-theme-${theme}`}
-          style={{
-            position: "absolute",
-            ...getPickerPositionStyle({
-              position,
-              pickerHeight: pickerSize.height,
-              pickerWidth: pickerSize.width,
-            }),
-          }}
-          data-theme={theme}
-        >
-          <EmojiInputPicker
-            isLoading={isLoading}
-            classNames={classNames}
-            config={mergedConfig}
-            initialCategory={initialCategory}
-            onEmojiSelect={onEmojiSelect}
-            styles={styles}
-            inputRef={
-              textInputRef as RefObject<HTMLInputElement | HTMLTextAreaElement>
-            }
-            emojiJsonData={emojiData}
-            onClose={() => setShowEmojiPicker(false)}
-            pickerRef={pickerRef}
-            theme={theme}
-            lang={lang}
-            enableTabsTitleEmoji={enableTabsTitleEmoji}
-            preventBadEmojis={preventBadEmojis}
-            badEmojiList={badEmojiList}
-          />
-        </div>
-      )}
-    </div>
+    <>
+      <GlobalStyles />
+      <div
+        className={`emoji-picker-container emoji-picker-theme-${theme}`}
+        style={{
+          fontFamily:
+            '"Twemoji Country Flags", "Helvetica", "Comic Sans", serif',
+        }}
+        data-theme={theme}
+      >
+        <Button
+          currentEmoji={currentEmoji}
+          setCurrentEmoji={setCurrentEmoji}
+          setShowEmojiPicker={setShowEmojiPicker}
+          showEmojiPicker={showEmojiPicker}
+          theme={theme}
+        />
+        {showEmojiPicker && (
+          <div
+            className={`emoji-picker-wrapper emoji-picker-position-${position} emoji-picker-theme-${theme}`}
+            style={{
+              position: "absolute",
+              ...getPickerPositionStyle({
+                position,
+                pickerHeight: pickerSize.height,
+                pickerWidth: pickerSize.width,
+              }),
+            }}
+            data-theme={theme}
+          >
+            <EmojiInputPicker
+              isLoading={isLoading}
+              classNames={classNames}
+              config={mergedConfig}
+              initialCategory={initialCategory}
+              onEmojiSelect={onEmojiSelect}
+              styles={styles}
+              inputRef={
+                textInputRef as RefObject<
+                  HTMLInputElement | HTMLTextAreaElement
+                >
+              }
+              emojiJsonData={emojiData}
+              onClose={() => setShowEmojiPicker(false)}
+              pickerRef={pickerRef}
+              theme={theme}
+              lang={lang}
+              enableTabsTitleEmoji={enableTabsTitleEmoji}
+              preventBadEmojis={preventBadEmojis}
+              badEmojiList={badEmojiList}
+            />
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

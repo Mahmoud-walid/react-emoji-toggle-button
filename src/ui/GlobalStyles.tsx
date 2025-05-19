@@ -1,4 +1,7 @@
-.emoji-picker-container {
+const GlobalStyles = () => {
+  return (
+    <style>{`
+        .emoji-picker-container {
   position: relative;
   user-select: none;
 }
@@ -139,3 +142,9 @@ circle.emoji-picker-spinner-path {
     stroke-dashoffset: -125px;
   }
 }
+
+        `}</style>
+  );
+};
+
+export default GlobalStyles;
