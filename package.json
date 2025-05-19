@@ -12,7 +12,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "main": "build/index.cjs",
   "module": "build/index.mjs",
