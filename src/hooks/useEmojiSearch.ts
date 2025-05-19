@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import type { Emoji, EmojiData, ListItem } from "../types";
 
 interface IProps {
   emojiJsonData: EmojiData;

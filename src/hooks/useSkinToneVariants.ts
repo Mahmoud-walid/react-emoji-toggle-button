@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import type { Emoji } from "../types";
 
 const useSkinToneVariants = () => {
   const [longPressEmoji, setLongPressEmoji] = useState<Emoji | null>(null);

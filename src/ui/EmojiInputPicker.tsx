@@ -23,6 +23,14 @@ import useInitialActiveCategory from "../hooks/useInitialActiveCategory";
 import useResetLongPressEmoji from "../hooks/useResetLongPressEmoji";
 import EmojiInputPickerRow from "./EmojiInputPickerRow";
 import useRecentEmojis from "../hooks/useRecentEmojis";
+import type {
+  Emoji,
+  EmojiData,
+  EmojiPickerClassNames,
+  EmojiPickerConfig,
+  EmojiPickerStyles,
+  ThemeColors,
+} from "../types";
 
 interface IProps {
   isLoading: boolean;

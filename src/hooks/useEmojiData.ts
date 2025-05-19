@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import type { Emoji, EmojiData } from "../types";
 
 const useEmojiData = ({
   lang,

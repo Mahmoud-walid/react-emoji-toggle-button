@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import type { Emoji } from "../types";
 
 const RECENT_EMOJIS_KEY = "recent-emojis";
 const MAX_RECENT_EMOJIS = 36; // Adjust as needed

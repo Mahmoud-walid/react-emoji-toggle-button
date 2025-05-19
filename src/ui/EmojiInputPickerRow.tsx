@@ -1,4 +1,10 @@
 import { createRef, type CSSProperties } from "react";
+import type {
+  Emoji,
+  EmojiPickerClassNames,
+  EmojiPickerStyles,
+  ListItem,
+} from "../types";
 
 interface IProps {
   item: ListItem;

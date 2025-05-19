@@ -1,4 +1,5 @@
 import { useEffect, type RefObject, type SetStateAction } from "react";
+import type { Emoji } from "../types";
 
 interface IProps {
   pickerRef: RefObject<HTMLDivElement | null>;
