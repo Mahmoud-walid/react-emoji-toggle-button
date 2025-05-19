@@ -1,4 +1,5 @@
 import type { Dispatch } from "react";
+import type { ThemeConfig } from "../types";
 
 const emojiList = [
   "😀",
