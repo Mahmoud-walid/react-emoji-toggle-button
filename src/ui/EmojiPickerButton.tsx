@@ -15,6 +15,13 @@ import Button from "./Button";
 import useEmojiData from "../hooks/useEmojiData";
 import useInputPlaceholderAndDir from "../hooks/useInputPlaceholderAndDir";
 import useEmojiPickerButtonState from "../hooks/useEmojiPickerButtonState";
+import type {
+  EmojiPickerClassNames,
+  EmojiPickerConfig,
+  EmojiPickerSizes,
+  EmojiPickerStyles,
+  ThemeConfig,
+} from "../types";
 
 interface IProps {
   textInputRef: RefObject<HTMLInputElement | HTMLTextAreaElement | null>;
