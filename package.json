@@ -34,7 +34,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -p tsconfig.build.json && vite build",
     "demo": "vite --config example/vite.config.demo.ts",
     "demo:build": "vite build --config example/vite.config.demo.ts",
     "deploy": "npm run demo:build && git subtree push --prefix docs origin gh-pages",

@@ -1,11 +1,14 @@
 {
   "extends": "./tsconfig.app.json",
   "compilerOptions": {
-    "outDir": "build",
     "declaration": true,
     "declarationDir": "build/types",
     "emitDeclarationOnly": false,
-    "noEmit": false
+    "outDir": "build",
+    "rootDir": "src",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
-  "exclude": ["node_modules", "build"]
+  "include": ["src"]
 }
