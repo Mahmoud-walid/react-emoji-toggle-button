@@ -1,14 +1,14 @@
-interface Emoji {
+export interface Emoji {
   code: string[];
   emoji: string;
   name: string;
   skinToneVariants?: Emoji[];
   hasSkinTones?: boolean;
 }
-interface EmojiSubCategory {
+export interface EmojiSubCategory {
   [subCategoryName: string]: Emoji[];
 }
-interface EmojiCategory {
+export interface EmojiCategory {
   [categoryName: string]: EmojiSubCategory;
 }
 export interface EmojiData {
@@ -17,7 +17,7 @@ export interface EmojiData {
 
 // ==============================
 
-interface ThemeColors {
+export interface ThemeColors {
   backgroundColor: string;
   textColor: string;
   borderColor: string;
@@ -31,7 +31,7 @@ interface ThemeColors {
   noResultsTextColor: string;
 }
 
-interface ThemeConfig {
+export interface ThemeConfig {
   light: ThemeColors;
   dark: ThemeColors;
   custom?: Record<string, ThemeColors>;
