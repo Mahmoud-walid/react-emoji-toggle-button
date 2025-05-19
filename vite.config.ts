@@ -11,7 +11,7 @@ export default defineConfig({
     lib: {
       entry: "./src/index.tsx",
       name: "react-emoji-picker-button",
-      fileName: "index",
+      fileName: (format) => (format === "es" ? "index.mjs" : "index.cjs"),
       formats: ["es", "cjs"],
     },
     rollupOptions: {
