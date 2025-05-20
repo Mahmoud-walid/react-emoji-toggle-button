@@ -4,6 +4,7 @@
     "type": "git",
     "url": "https://github.com/Mahmoud-walid/react-emoji-toggle-button.git"
   },
+  "readme": "./README.md",
   "bugs": {
     "url": "https://github.com/Mahmoud-walid/react-emoji-toggle-button/issues"
   },
