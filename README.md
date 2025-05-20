@@ -1,4 +1,17 @@
-Here's a professional and comprehensive documentation update for your `README.md`, including a detailed table of all `EmojiPickerButton` props, their types, descriptions, and default values.
+# react-emoji-toggle-button
+
+A customizable and lightweight React component that lets users pick emojis through a beautiful button-triggered picker. Supports light/dark themes, RTL (Arabic), recent emojis, flag emojis, and much more 🚀.
+
+## Features
+
+- **Customizable**: Easily style the picker to match your application's theme and preferences.
+- **Light/Dark Themes**: Choose between light and dark themes to suit your design.
+- **RTL Support**: Supports Arabic (RTL) language for a seamless user experience.
+- **Recent Emojis**: Keep track of recently used emojis for quick access.
+- **Flag Emojis**: Supports flag emojis for a more localized experience.
+- **Customizable Sizes**: Adjust the picker's size to fit your design.
+- **Prevent Bad Emojis**: Filter out a predefined list of unwanted emojis.
+- **Customizable Bad Emoji List**: Provide your own list of emojis to filter out.
 
 **Note**: You must connect the `<EmojiPickerButton />` to the ref of your text input or textarea for it to work correctly.
 
