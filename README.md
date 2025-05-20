@@ -1,10 +1,34 @@
 Here's a professional and comprehensive documentation update for your `README.md`, including a detailed table of all `EmojiPickerButton` props, their types, descriptions, and default values.
 
+**Note**: You must connect the `<EmojiPickerButton />` to the ref of your text input or textarea for it to work correctly.
+
 ---
 
 ## Live Demo
 
 You can try the Emoji Picker Button live here: [Demo](https://mahmoud-walid.github.io/react-emoji-toggle-button/)
+
+---
+
+## Flag Emoji Support
+
+When using country flag emojis in your application, you must use the following font family to ensure proper rendering across all platforms:
+
+```css
+font-family: "Twemoji Country Flags", "Helvetica", "Comic Sans", serif;
+```
+
+This font family ensures that flag emojis are displayed consistently across platforms, providing a seamless user experience.
+
+---
+
+## Installation
+
+You can install the `react-emoji-toggle-button` package using npm:
+
+```bash
+npm install react-emoji-toggle-button
+```
 
 ---
 
