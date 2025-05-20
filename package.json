@@ -1,13 +1,13 @@
 {
-  "homepage": "https://mahmoud-walid.github.io/react-emoji-picker-button/",
+  "homepage": "https://mahmoud-walid.github.io/react-emoji-toggle-button/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mahmoud-walid/react-emoji-picker-button.git"
+    "url": "https://github.com/Mahmoud-walid/react-emoji-toggle-button.git"
   },
   "bugs": {
-    "url": "https://github.com/Mahmoud-walid/react-emoji-picker-button/issues"
+    "url": "https://github.com/Mahmoud-walid/react-emoji-toggle-button/issues"
   },
-  "name": "react-emoji-picker-button",
+  "name": "react-emoji-toggle-button",
   "private": false,
   "publishConfig": {
     "access": "public"

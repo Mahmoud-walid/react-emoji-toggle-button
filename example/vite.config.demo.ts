@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   root: "example",
-  base: "/react-emoji-picker-button/",
+  base: "/react-emoji-toggle-button/",
   plugins: [react()],
   build: {
     outDir: "../docs",

@@ -4,7 +4,7 @@ Here's a professional and comprehensive documentation update for your `README.md
 
 ## Live Demo
 
-You can try the Emoji Picker Button live here: [Demo](https://mahmoud-walid.github.io/react-emoji-picker-button/)
+You can try the Emoji Picker Button live here: [Demo](https://mahmoud-walid.github.io/react-emoji-toggle-button/)
 
 ---
 
