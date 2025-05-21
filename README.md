@@ -43,6 +43,12 @@ You can install the `react-emoji-toggle-button` package using npm:
 npm install react-emoji-toggle-button
 ```
 
+You can also install it using yarn:
+
+```bash
+yarn add react-emoji-toggle-button
+```
+
 ---
 
 ## EmojiPickerButton Props
