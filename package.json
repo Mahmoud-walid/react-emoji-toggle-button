@@ -65,9 +65,20 @@
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"
   },
+  "description": "A flexible and reusable React package to use an emoji picker and connect it with a text input using Ref. Toggle emoji button for React apps.",
   "author": {
     "name": "Mahmoud Walid",
     "email": "modywmbadr@gmail.com",
     "url": "https://github.com/Mahmoud-walid/"
-  }
+  },
+  "keywords": [
+    "react",
+    "emoji",
+    "picker",
+    "input",
+    "component",
+    "toggle",
+    "btn",
+    "button"
+  ]
 }

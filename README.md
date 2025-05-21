@@ -1,4 +1,4 @@
-# react-emoji-toggle-button
+# react-emoji-toggle-button &middot; [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Mahmoud-walid/react-emoji-toggle-button/blob/main/LICENSE) &middot; [![npm version](https://img.shields.io/npm/v/react-emoji-toggle-button.svg?style=flat)](https://www.npmjs.com/package/react-emoji-toggle-button)
 
 A customizable and lightweight React component that lets users pick emojis through a beautiful button-triggered picker. Supports light/dark themes, (Arabic and English), recent emojis, flag emojis, and much more 🚀.
 
